@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+#include<math.h>
+int main()
+{ int s,a,b,c,area,b,l,a1,choice;
+  cout<<"enter your choice for finding are of a triangle: 1.normal formula 2.herons formula 3.equilateral triangle formula";
+  cin>>choice;
+  switch(choice):
+  {
+  case'1':cout<<"Enter the length and breadth of the triangle:";
+           cin>>l>>b;
+           area=0.5*b*l;
+           cout<<area;
+           break;
+  case'2':cout<<"Enter the sides of the triangle:"
+           cin>>a>>b>>c;
+           s=(a+b+c)/2;
+           area=sqrt(s*(s-a)*(s-b)*(s-c))
+           cout<<area;
+           break;
+  case'3':cout<<"Enter the side of the triangle:";
+           cin>>a1;
+           area=0.433*a1*a1;
+           cout<<area;
+           break;
+  default:cout<<"wrong choice";  
+           break;
+    }
+    return 0;
+}    
